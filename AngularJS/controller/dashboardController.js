@@ -12,5 +12,8 @@
             $location.path('/allusers');
 
         }
+        $scope.editDepartments = function () {
+            $location.path('/allEditDepartments')
+        }
     }
 })();

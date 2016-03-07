@@ -1,0 +1,19 @@
+﻿<h2>Employee Details</h2>
+<div class="jumbotron">
+    <div class="table-responsive">
+
+        <table class="table table-bordered">
+            <thead>
+                <tr ng-repeat="department in alldepartments">
+                    <th>{{department.DeptID}}</th>
+                    <th>{{DeptName}}</th>
+                    <th>{{DeptLocation}}</th>
+                    <th><input type="button" ng-click="EditDepartment(department.DeptID)" /></th>
+                </tr>
+            </thead>
+
+            <tbody></tbody>
+        </table>
+
+    </div>
+</div>

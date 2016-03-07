@@ -1,4 +1,5 @@
-﻿var app = angular.module('Application', [
+﻿/// <reference path="app.js" />
+var app = angular.module('Application', [
   'ngRoute'
 ]);
 
@@ -23,6 +24,10 @@ app.config(['$routeProvider', '$locationProvider',
               templateUrl: 'views/allUsers.html',
               controller: 'userController'
           }).
+          when('/allEditDepartments',{
+              templateUrl: 'views/allEditDepartments.html',
+              controller:'deptController'
+          })
        otherwise({
             redirectTo: '/'
         });

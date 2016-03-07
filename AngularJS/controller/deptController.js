@@ -33,12 +33,19 @@
                 socpe.result = state.data;
             });
         }
+        
+        $scope.viewAllEditDepartments = function () {
+            deptService.viewAllEditDepartments().then(function (state) {
+                $scope.alldepartments = state.data;
 
-        $scope.updateSingleUser = function (user) {
-            $scope.result = deptService.updateSingleUser(user).then(function (state) {
-                socpe.result = state.data;
             });
         }
 
+        //$scope.updateSingleUser = function (user) {
+        //    $scope.result = deptService.updateSingleUser(user).then(function (state) {
+        //        socpe.result = state.data;
+        //    });
+        //}
+        $scope.
     }
 })();
