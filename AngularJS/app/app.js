@@ -7,10 +7,6 @@ var app = angular.module('Application', [
 app.config(['$routeProvider', '$locationProvider',
   function ($routeProvider, $locationProvider) {
 
-      //$locationProvider.html5Mode(true);
-
-
-
       $routeProvider.
         when('/', {
             templateUrl: 'views/login.html',
@@ -27,7 +23,11 @@ app.config(['$routeProvider', '$locationProvider',
           when('/allEditDepartments',{
               templateUrl: 'views/allEditDepartments.html',
               controller:'deptController'
-          })
+          }).
+           when('/thisEditDepartment', {
+               templateUrl: 'views/thisEditDepartment.html',
+               controller: 'deptController'
+           }).
        otherwise({
             redirectTo: '/'
         });

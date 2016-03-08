@@ -926,6 +926,7 @@
     <Content Include="views\editUser.html" />
     <Content Include="views\login.html" />
     <Content Include="views\singleUser.html" />
+    <Content Include="views\thisEditDepartment.html" />
     <Content Include="views\viewAllDepartments.html" />
     <Content Include="views\viewsSingleDepartment.html" />
     <Content Include="Web.config" />

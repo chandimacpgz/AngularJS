@@ -13,7 +13,7 @@
 
         }
         $scope.editDepartments = function () {
-            $location.path('/allEditDepartments')
+            $location.path('/allEditDepartments');
         }
     }
 })();

@@ -1,14 +1,14 @@
-﻿<h2>Employee Details</h2>
+﻿<h2>Department Details</h2>
 <div class="jumbotron">
     <div class="table-responsive">
 
         <table class="table table-bordered">
             <thead>
                 <tr ng-repeat="department in alldepartments">
-                    <th>{{department.DeptID}}</th>
-                    <th>{{DeptName}}</th>
-                    <th>{{DeptLocation}}</th>
-                    <th><input type="button" ng-click="EditDepartment(department.DeptID)" /></th>
+                    
+                    <th>{{department.DeptName}}</th>
+                    <th>{{department.DeptLocation}}</th>
+                    <th><button ng-click="editthisDepartment(department.DeptName)" type="button" class="btn btn-danger">Edit</button></th>
                 </tr>
             </thead>
 

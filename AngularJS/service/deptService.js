@@ -10,6 +10,7 @@
         service.viewAllDepartments = viewAllDepartments;
         service.viewSingleDepartment = viewSingleDepartment;
         service.deleteSingleDepartment = deleteSingleDepartment;
+        service.viewAllEditDepartments = viewAllEditDepartments;
         service.updateSingleDepartment = updateSingleDepartment;
 
         return service;
@@ -41,7 +42,7 @@
         // custom functions
 
         function handleSuccess(res) {
-            return res.data;
+            return res;
         }
 
         function handleError(error) {
@@ -49,11 +50,6 @@
                 return { success: false, message: error };
             };
         }
-
-
-
-
-
-    }
+  }
 
 })();
