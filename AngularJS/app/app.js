@@ -24,7 +24,7 @@ app.config(['$routeProvider', '$locationProvider',
               templateUrl: 'views/allEditDepartments.html',
               controller:'deptController'
           }).
-           when('/thisEditDepartment', {
+           when('/thisEditDepartment/:showname', {
                templateUrl: 'views/thisEditDepartment.html',
                controller: 'deptController'
            }).

@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="controller\editControllerRoute.js" />
     <Content Include="controller\loginController.js" />
     <Content Include="controller\deptController.js" />
     <Content Include="controller\userController.js" />

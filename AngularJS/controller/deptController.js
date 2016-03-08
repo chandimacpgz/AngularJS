@@ -5,13 +5,11 @@
         .module('Application')
         .controller('deptController', deptController);
 
-    deptController.$inject = ['$location', '$scope', 'deptService' ];
+    deptController.$inject = ['$location', '$scope', 'deptService','$routeParams' ];
 
-    function deptController($location, $scope, deptService) {
+    function deptController($location, $scope, deptService,$routeParams) {
    
-        $scope.editthisDepartment = function () {
-            $location.path('/thisEditDepartment');
-        }
+      $scope.showname
             deptService.viewAllDepartments().then(function (state) {
                 $scope.alldepts = state.data;
 
